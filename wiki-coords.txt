@@ -1,1 +1,1 @@
-javascript:void(prompt('',"{{coord|"%20+%20gApplication.getMap().getCenter().lat()%20+%20"|"%20+%20gApplication.getMap().getCenter().lng()%20+%20"|type:landmark_globe:earth_region:US-PA|display=title}}"));
+javascript:void(prompt('',"{{coord|"%20+%20gApplication.getMap().getCenter().lat()%20+%20"|"%20+%20gApplication.getMap().getCenter().lng()%20+%20"|type:landmark_globe:earth_region:US-PA|display=title}}")); 
