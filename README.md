@@ -11,4 +11,6 @@ Usage:
 4. Click the bookmarklet.
 5. Add resulting tag to the Wikipedia article you are working on.
 
-Example output:  *{{coord|39.87918107556866|-75.0726056098938|type:landmark_globe:earth_region:US-NJ|display=title}}*
+Example output:
+
+<code>{{coord|39.87918107556866|-75.0726056098938|type:landmark_globe:earth_region:US-NJ|display=title}}</code>
