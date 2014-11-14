@@ -13,4 +13,4 @@ Usage:
 
 Example output:
 
-<code>{{coord|39.87918107556866|-75.0726056098938|type:landmark_globe:earth_region:US-NJ|display=title}}</code>
+<code>{{coord|39.87918107556869|-75.0726056098938|type:landmark_globe:earth_region:US-NJ|display=title}}</code>
