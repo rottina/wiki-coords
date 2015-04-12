@@ -1,0 +1,1 @@
+javascript:void(prompt('Update the "type:" and "earth_region:" values.\n\nSome common types:\nadm1st adm2nd adm3rd airport city edu event forest isle landmark mountain railwaystation river',"{{coord|" + document.getElementsByClassName('cards-reveal-lat-lng')[0].innerHTML.replace(', ','|') + "|type:landmark_globe:earth_region:US-NJ|display=title}}"));
