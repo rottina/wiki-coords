@@ -19,4 +19,4 @@ A [Wikipedia](http://en.wikipedia.org/ "Wikipedia") coordinate tag creator. This
 
 ## Example output
 
-<code>{{coord|40.666277|-74.115612|type:landmark_globe:earth_region:US-NJ|display=title}}</code>
+`{{coord|40.666277|-74.115612|type:landmark_globe:earth_region:US-NJ|display=title}}`
