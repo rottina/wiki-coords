@@ -1,1 +1,0 @@
-javascript:void(prompt('',"{{coord|" + gApplication.getMap().getCenter().lat().toString().substring(0,8) + "|" + gApplication.getMap().getCenter().lng().toString().substring(0,9) + "|type:landmark_globe:earth_region:US-NJ|display=title}}"));
