@@ -1,6 +1,6 @@
 # wiki-coords
 
-A [Wikipedia](http://en.wikipedia.org/ "Wikipedia") coordinate tag creator. This bookmarklet creates a {{coord}} tag based on a point on a google map. [More on Wikipedia geo-tagging.](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Geographical_coordinates "Wikipedia geo-tagging")
+A [Wikipedia](https://en.wikipedia.org/ "Wikipedia") coordinate tag creator. This bookmarklet creates a `{{coord}}` tag based on a point on a Google map. [More on Wikipedia geo-tagging.](https://en.wikipedia.org/wiki/Wikipedia:WikiProject_Geographical_coordinates "Wikipedia geo-tagging")
 
 ## Google Maps Usage
 
