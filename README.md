@@ -7,7 +7,8 @@ A [Wikipedia](https://en.wikipedia.org/ "Wikipedia") coordinate tag creator. Thi
 1. Create a bookmark in your browser, edit it, name it whatever, and paste the contents of the `wiki.coords.min.js` into the URL field.
 2. Navigate to [Google Maps](https://maps.google.com/ "Google Maps"). Right-click on a point.
 3. Click the bookmarklet.
-4. Add the resulting tag to a [Wikipedia article in need of coordinates](https://en.wikipedia.org/wiki/Category:Articles_missing_geocoordinate_data_by_country).
+4. Modify any needed fields such as ''region''.
+5. Add the resulting tag to a [Wikipedia article in need of coordinates](https://en.wikipedia.org/wiki/Category:Articles_missing_geocoordinate_data_by_country).
 
 ## Example output
 
