@@ -3,7 +3,6 @@ javascript: (() => {
   const msg = "May need to update the \"type:\" value.\nUpdate the \"earth_region:\" value with ISO-2 code.\nSome common types:\nadm1st adm2nd adm3rd airport city edu event forest isle landmark mountain railwaystation river waterbody";
   const coordsElem = document.querySelector("#action-menu > div:nth-child(1) > div > div");
   let typeElem = document.querySelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div:nth-child(2) > span > span > button");
-  let addy = "";
   let coords = "";
   let iso2 = "US-";
   let geotype = "landmark";
