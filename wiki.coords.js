@@ -29,10 +29,19 @@ javascript: (() => {
       case "university":
         geotype = "edu";
         break;
+      case "college":
+        geotype = "edu";
+        break;
+      case "private university":
+        geotype = "edu";
+        break;
       case "university hospital":
         geotype = "edu";
         break;
       case "high school":
+        geotype = "edu";
+        break;
+      case "middle school":
         geotype = "edu";
         break;
       case "elementary school":
