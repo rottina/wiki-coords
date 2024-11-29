@@ -2,13 +2,12 @@ javascript: (() => {
   const coordRegex = /([^\d]*\d*)\.(\d{4})/g;
   const msg = "May need to update the \"type:\" value.\nUpdate the \"earth_region:\" value with ISO-2 code.\nSome common types:\nadm1st adm2nd adm3rd airport city edu event forest isle landmark mountain railwaystation river waterbody";
   const coordsElem = document.querySelector("#action-menu > div:nth-child(1) > div > div");
-  let typeElem = document.querySelector("#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.TIHn2 > div > div.lMbq3e > div.LBgpqf > div > div:nth-child(2) > span > span > button");
+  let typeElem = document.querySelector("button.DkEaL");
   let coords = "";
   let iso2 = "US-";
   let geotype = "landmark";
   let finalLat = "";
   let finalLng = "";
-
   if (coordsElem === undefined) {
     coords = "ADD_COORDS";
   } else {
@@ -18,52 +17,39 @@ javascript: (() => {
     finalLat = lat.match(coordRegex);
     finalLng = lng.match(coordRegex);
   }
-
   if (typeElem !== null) {
     geotype = typeElem.textContent.toLowerCase();
-    switch (geotype) {
-      case "mountain peak":
+    switch (true) {
+      case /school/i.test(geotype):
+        geotype = "edu";
+        break;
+      case /university/i.test(geotype):
+        geotype = "edu";
+        break;
+      case /college/i.test(geotype):
+        geotype = "edu";
+        break;
+      case /mountain/i.test(geotype):
         geotype = "mountain";
         break;
-      case "university":
-        geotype = "edu";
-        break;
-      case "college":
-        geotype = "edu";
-        break;
-      case "private university":
-        geotype = "edu";
-        break;
-      case "university hospital":
-        geotype = "edu";
-        break;
-      case "high school":
-        geotype = "edu";
-        break;
-      case "middle school":
-        geotype = "edu";
-        break;
-      case "elementary school":
-        geotype = "edu";
-        break;
-      case "nursing school":
-        geotype = "edu";
-        break;
-      case "lake":
+      case /lake/i.test(geotype):
         geotype = "waterbody";
         break;
-      case "international airport":
-        geotype = "airport";
+      case /ocean/i.test(geotype):
+        geotype = "waterbody";
         break;
-      case "island":
-        geotype = "isle";
+      case /pond/i.test(geotype):
+        geotype = "waterbody";
         break;
-      case "river":
-        geotype = "river";
+      case /forest/i.test(geotype):
+        geotype = "forest";
+        break;
+      case /festival/i.test(geotype):
+        geotype = "event";
         break;
       default:
         geotype = "landmark";
-    }
+    } 
   } else {
     geotype = "landmark";
   }
