@@ -2,12 +2,22 @@ javascript: (() => {
   const coordRegex = /([^\d]*\d*)\.(\d{4})/g;
   const msg = "May need to update the \"type:\" value.\nUpdate the \"earth_region:\" value with ISO-2 code.\nSome common types:\nadm1st adm2nd adm3rd airport city edu event forest isle landmark mountain railwaystation river waterbody";
   const coordsElem = document.querySelector("#action-menu > div:nth-child(1) > div > div");
+  let websiteElem = document.querySelector('div.rogA2c.ITvuef div.Io6YTe.fontBodyMedium.kR99db.fdkmkc');
   let typeElem = document.querySelector("button.DkEaL");
   let coords = "";
   let iso2 = "US-";
   let geotype = "landmark";
   let finalLat = "";
   let finalLng = "";
+  let websiteTxt = "";
+
+  if (websiteElem !== null) {
+    websiteTxt = websiteElem.innerText;
+    let lastTwoChars = websiteTxt.match(/.{2}$/)[0];
+    lastTwoChars = lastTwoChars.toUpperCase();
+    iso2 = lastTwoChars;
+  }
+
   if (coordsElem === undefined) {
     coords = "ADD_COORDS";
   } else {
